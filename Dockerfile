@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 LABEL MAINTAINER Kerron Gordon <kgpsounds.com@gmail.com>
 
-ENV VERSION=18.0.01
+ENV VERSION=19.0.00
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
