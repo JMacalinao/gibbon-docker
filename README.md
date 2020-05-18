@@ -1,4 +1,8 @@
-# Getting Started
+# Gibbon (on Docker)
+
+Note: This uses a custom implementation of Gibbon. Use at your own risk.
+
+## Getting Started
 
 [![Build Status](https://travis-ci.org/kerrongordon/gibbon-docker.svg?branch=master)](https://travis-ci.org/kerrongordon/gibbon-docker) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/kerrongordon/gibbon) ![Docker Pulls](https://img.shields.io/docker/pulls/kerrongordon/gibbon) ![Docker Stars](https://img.shields.io/docker/stars/kerrongordon/gibbon)
 
