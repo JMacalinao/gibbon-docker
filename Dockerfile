@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-LABEL MAINTAINER Kerron Gordon <kgpsounds.com@gmail.com>
+LABEL MAINTAINER JJ Macalinao <jj.macalinao@haven.edu.ph>
 
 ENV VERSION=19.0.00-custom
 ENV APACHE_RUN_USER www-data
