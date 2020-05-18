@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 LABEL MAINTAINER Kerron Gordon <kgpsounds.com@gmail.com>
 
-ENV VERSION=19.0.00
+ENV VERSION=19.0.00-custom
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
@@ -33,7 +33,7 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
     sed -i 's/magic_quotes_gpc = On/magic_quotes_gpc = Off/g' /etc/php/7.2/apache2/php.ini && \
     sed -i "s/^allow_url_fopen.*$/allow_url_fopen = On/" /etc/php/7.2/apache2/php.ini && \
     sed -i 's/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/' /etc/php/7.2/apache2/php.ini && \
-    wget -c https://github.com/JMacalinao/gibbon-core/archive/v${VERSION}-custom.tar.gz && \
+    wget -c https://github.com/JMacalinao/gibbon-core/archive/v${VERSION}.tar.gz && \
     tar -xzf v${VERSION}.tar.gz && \
     cp -af core-${VERSION}/. ./ && \
     rm -rf core-${VERSION} && rm -rf v${VERSION}.tar.gz && \
