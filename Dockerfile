@@ -35,8 +35,8 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
     sed -i 's/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/' /etc/php/7.2/apache2/php.ini && \
     wget -c https://github.com/JMacalinao/gibbon-core/archive/v${VERSION}.tar.gz && \
     tar -xzf v${VERSION}.tar.gz && \
-    cp -af core-${VERSION}/. ./ && \
-    rm -rf core-${VERSION} && rm -rf v${VERSION}.tar.gz && \
+    cp -af gibbon-core-${VERSION}/. ./ && \
+    rm -rf gibbon-core-${VERSION} && rm -rf v${VERSION}.tar.gz && \
     git clone https://github.com/GibbonEdu/i18n.git ./i18n && \
     chmod -R 755 . && chown -R www-data:www-data . && \
     apt-get remove -y wget && \
